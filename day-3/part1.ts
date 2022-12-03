@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 let data = fs.readFileSync(path.resolve(__dirname, "data.txt")).toString();
 // let data = fs.readFileSync(path.resolve(__dirname, "data-example.txt")).toString();
-data = data.split("\r\n").map((row: string) => {
+data = data.split("\n").map((row: string) => {
   const rowLength = row.length / 2;
   return [row.slice(0, rowLength), row.slice(rowLength)];
 });

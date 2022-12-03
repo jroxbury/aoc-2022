@@ -1,8 +1,10 @@
 const fs = require("fs");
 const path = require("path");
-let data = fs.readFileSync(path.resolve(__dirname, "data.txt")).toString();
-// let data = fs.readFileSync(path.resolve(__dirname, "data-example.txt")).toString();
-data = data.split("\r\n");
+let data = fs
+  .readFileSync(path.resolve(__dirname, "data.txt"))
+  .toString()
+  .split("\n");
+// let data = fs.readFileSync(path.resolve(__dirname, "data-example.txt")).toString().split('\n');
 
 function mapLetterToPriority(letter: string): number {
   const charCode = letter.charCodeAt(0);

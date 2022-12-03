@@ -6,8 +6,11 @@
   },
   "dependencies": {
     "@types/node": "^16.11.2",
+    "axios": "^1.2.0",
+    "dotenv": "^16.0.3",
     "fs-extra": "^11.1.0",
     "nodemon": "^2.0.12",
+    "open": "^8.4.0",
     "prompt-sync": "^4.2.0",
     "ts-node": "^10.3.1",
     "typescript": "^4.4.4"
