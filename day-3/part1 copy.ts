@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 let data = fs.readFileSync(path.resolve(__dirname, "data.txt")).toString();
 // let data = fs.readFileSync(path.resolve(__dirname, "data-example.txt")).toString();
-data = data.split("\n").map((row: string) => {
+data = data.split("\r\n").map((row: string) => {
   const rowLength = row.length / 2;
   return [row.slice(0, rowLength), row.slice(rowLength)];
 });
@@ -17,6 +17,7 @@ function findCommonLetter(arr1: string[], arr2: string[]): string {
       return letter;
     }
   }
+  return "";
 }
 
 function mapLetterToPriority(letter: string): number {
@@ -30,7 +31,7 @@ function mapLetterToPriority(letter: string): number {
   return charCode - uppercase;
 }
 
-export function part1(): void {
+export function part1() {
   let total = 0;
   for (const [first, second] of data) {
     total += mapLetterToPriority(findCommonLetter(first, second));

@@ -7,7 +7,7 @@ let data = fs
   .split("\n\n")
   .map((item) => item.split("\n").map((item) => Number(item)));
 
-export function part1() {
+export function part1(): void {
   let elfCount = 0;
   let largest = 0;
   const elfs = {};

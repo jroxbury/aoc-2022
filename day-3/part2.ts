@@ -17,7 +17,7 @@ function mapLetterToPriority(letter: string): number {
   return charCode - uppercase;
 }
 
-export function part2() {
+export function part2(): void {
   let current = 1;
   let firstRow = {};
   let secondRow = {};
