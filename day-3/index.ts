@@ -1,8 +1,7 @@
-const fs = require('fs');
-const path = require("path");
-// const data = fs.readFileSync(path.resolve(__dirname, "data.txt")).toString();
-const data = fs.readFileSync(path.resolve(__dirname, "data-example.txt")).toString();
+import { part1 } from "./part1";
+import { part2 } from "./part2";
 
-export function day3(){
-    console.log(data);
+export function day3() {
+  part1();
+  part2();
 }
