@@ -6,3 +6,6 @@ import { day2 } from "./day-2";
 
 import { day3 } from "./day-3";
 // day3();
+
+import { day4 } from "./day-4";
+day4();
