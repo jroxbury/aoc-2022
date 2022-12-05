@@ -49,7 +49,7 @@ async function copyTemplate() {
     withCredentials: true,
   });
 
-  fs.writeFile(updateDataPath, res.data.trim(), "utf8", function (err) {
+  fs.writeFile(updateDataPath, res.data, "utf8", function (err) {
     if (err) return console.log(err);
   });
 }
