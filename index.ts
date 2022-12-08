@@ -17,4 +17,7 @@ import { day6 } from "./day-6";
 // day6();
 
 import { day7 } from "./day-7";
-day7();
+// day7();
+
+import { day8 } from "./day-8";
+// day8();
