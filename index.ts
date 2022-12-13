@@ -21,3 +21,12 @@ import { day7 } from "./day-7";
 
 import { day8 } from "./day-8";
 // day8();
+
+import { day9 } from "./day-9";
+day9();
+
+import { day10 } from "./day-10";
+// day10();
+
+import { day11 } from "./day-11";
+// day11();
